@@ -1,0 +1,17 @@
+{
+  "name": "revival",
+  "version": "1.0.0",
+  "description": "hotel's page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Kamela",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}

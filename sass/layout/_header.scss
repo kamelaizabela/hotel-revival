@@ -1,0 +1,50 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient( to right bottom, rgba($color-secondary-dark, 0.5), rgba($color-secondary-light, 0.5)), url(../img/header.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    margin-bottom: 0;
+    &__textbox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.header__logo-box {
+    display: block;
+    width: 4rem;
+    text-align: center;
+    @media only all and (max-width: 800px) {
+        display: inline;
+    }
+    &--icon {
+        padding: .5rem;
+        margin-bottom: 3rem;
+        color: $color-white;
+        font-size: 3.5rem;
+        text-shadow: 1.5px 2px 8px rgba($color-white, 0.7);
+        @media only all and (max-width: 800px) {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.box {
+    position: absolute;
+}
+
+.fab {
+    transition: transform .3s;
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}
+
+.navbar--main {
+    position: sticky;
+}
